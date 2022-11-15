@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example mousekeyspr'
+name: 'Build r2d2rogers corne'
 on: workflow_dispatch
 jobs:
   build:
@@ -10,6 +10,6 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["corne_left","corne_right"]'
-      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_SLEEP=y"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR\nMIRYOKU=ALPHAS=QWERTY\nMIRYOKU_NAV=VI"]'
+      kconfig: '["CONFIG_ZMK_RGB_UNDERGLOW=y\nCONFIG_WS2812_STRIP=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_BT_MAX_CONN\nCONFIG_BT_MAX_PAIRED=11\nCONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_SLEEP=y"]'
       branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
