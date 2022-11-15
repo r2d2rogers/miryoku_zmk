@@ -11,5 +11,5 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["corne_left","corne_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y","CONFIG_ZMK_DISPLAY=y","CONFIG_ZMK_SLEEP=y"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_SLEEP=y"]'
       branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
